@@ -74,10 +74,9 @@ myBot.addTriggers([
 	},
 	{ 
 		name: 'SteamIDCheck', 
-		type: 'SteamInfoTrigger', 
+		type: 'SteamrepTrigger', 
 		options: { 
-			command: "!steaminfo", 
-			delay: 1000, 
+			command: "!steamrep", 
 			timeout: 5000 
 		} 
 	},
