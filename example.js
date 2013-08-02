@@ -72,6 +72,15 @@ myBot.addTriggers([
 			timeout: 10*1000 
 		} 
 	},
+	{ 
+		name: 'SteamIDCheck', 
+		type: 'SteamInfoTrigger', 
+		options: { 
+			command: "!steaminfo", 
+			delay: 1000, 
+			timeout: 5000 
+		} 
+	},
 
 	// Reply triggers that will only respond to a particular user
 	{ 
