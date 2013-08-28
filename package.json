@@ -1,13 +1,13 @@
 {
     "name": "steam-chat-bot"
-  , "version": "1.2.0"
+  , "version": "1.2.3"
   , "description": "Simplified interface for a steam chat bot with lots of built-in functionality"
   , "keywords": ["steam", "chatbot", "cleverbot", "wolfram", "youtube", "tumblr"]
   , "author": "bonnici <lljksteveholt@gmail.com>"
   , "main": "./lib/chatBot"
   , "repository": {
       "type": "git"
-    , "url": "https://github.com/bonnici/node-steam-chat-bot.git"
+    , "url": "https://github.com/Efreak/node-steam-chat-bot.git"
   }
   , "dependencies": {
       "steam": "0.5.x"
@@ -19,6 +19,9 @@
     , "wolfram": "0.2.x"
     , "tumblr.js": "0.0.x"
     , "youtube-feeds": "2.2.x"
+    , "request": "2.26.0"
+    , "roll": "0.3.2"
+    , "steam-trade": "git://github.com/Efreak/node-steam-trade.git"
   }
   , "engines": {
       "node": "0.10.x"
