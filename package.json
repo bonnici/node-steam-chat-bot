@@ -1,6 +1,6 @@
 {
     "name": "steam-chat-bot"
-  , "version": "1.2.0"
+  , "version": "1.2.1"
   , "description": "Simplified interface for a steam chat bot with lots of built-in functionality"
   , "keywords": ["steam", "chatbot", "cleverbot", "wolfram", "youtube", "tumblr"]
   , "author": "bonnici <lljksteveholt@gmail.com>"
@@ -15,7 +15,7 @@
     , "winston": "0.7.x"
     , "sinon": "1.7.x"
     , "nock": "0.22.x"
-    , "cleverbot-node": "0.1.x"
+    , "cleverbot-node": ">= 0.1.2"
     , "wolfram": "0.2.x"
     , "tumblr.js": "0.0.x"
     , "youtube-feeds": "2.2.x"
