@@ -183,6 +183,20 @@ myBot.addTriggers([
 		type: 'YoutubeTrigger', 
 		options: { command: '!yt', rickrollChance: 0.01 } 
 	},
+
+	// Search Google and respond with the top result whenever someone types !g <query>
+	{
+		name: 'Google',
+		type: 'GoogleTrigger',
+		options: { command: '!g' }
+	},
+
+	// Search Google Images and respond with the top result whenever someone types !gi <query>
+	{
+		name: 'GoogleImages',
+		type: 'GoogleImagesTrigger',
+		options: { command: '!gi' }
+	}
 ]);
 
 myBot.connect();

@@ -21,6 +21,10 @@ ChatReplyTrigger - Detects a message (either an exact match or a "contains" matc
 
 CleverbotTrigger - Uses cleverbot to reply to a message, optionally only when a specific word is mentioned.
 
+GoogleTrigger - Prints out the title and link of the first search result on Google.
+
+GoogleImagesTrigger - Prints a link to the first search result on Google Images.
+
 RegexReplaceTrigger - Detects a regex match in a message and uses the matches to construct a reply.
 
 TumblrTrigger - Allows the bot to post things to a tumblr blog, either by commands (!postphoto, !postquote, !posttext, !postlink, !postchat, !postaudio, !postvideo), or by monitoring the chatrooms the bot is in for links. You will need to register an app here: http://www.tumblr.com/oauth/apps and follow these instructions to get the keys: https://groups.google.com/d/msg/tumblr-api/gz8Zv-Mhex4/8-eACnkArkgJ.

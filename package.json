@@ -2,7 +2,7 @@
     "name": "steam-chat-bot"
   , "version": "1.2.3"
   , "description": "Simplified interface for a steam chat bot with lots of built-in functionality"
-  , "keywords": ["steam", "chatbot", "cleverbot", "wolfram", "youtube", "tumblr"]
+  , "keywords": ["steam", "chatbot", "cleverbot", "wolfram", "youtube", "tumblr", "google"]
   , "author": "bonnici <lljksteveholt@gmail.com>"
   , "main": "./lib/chatBot"
   , "repository": {
@@ -19,6 +19,8 @@
     , "wolfram": "0.3.x"
     , "tumblr.js": "0.0.x"
     , "youtube-feeds": "2.2.x"
+    , "google": "0.3.x"
+    , "google-images": "0.1.x"
   }
   , "engines": {
       "node": "0.10.x"
