@@ -98,6 +98,7 @@ describe("ChatBot", function() {
 		});
 	});
 
+
 	describe("ChatBot muting", function() {
 		it("should update its persona state when muted and unmuted", function() {
 			bot = new ChatBot("username", "password", { client: fakeClient });
@@ -126,7 +127,7 @@ describe("ChatBot", function() {
 				}, 110);
 			});
 
-			waits(120);
+			waits(200);
 
 			runs(function() {
 				expect(fakeClient.setPersonaState.calls.length).toEqual(3); // first log-on, mute, reconnect
@@ -238,7 +239,7 @@ describe("ChatBot", function() {
 			var fakeTrigger1 = bot.addTrigger("fakeTrigger1", "type");
 			var fakeTrigger2 = bot.addTrigger("fakeTrigger2", "type");
 
-			bot._onRelationship("userId", steam.EFriendRelationship.PendingInvitee);
+			bot._onRelationship("userId", steam.EFriendRelationship.RequestRecipient);
 
 			expect(fakeTrigger1.onFriendRequest).toHaveBeenCalledWith("userId");
 			expect(fakeTrigger2.onFriendRequest).toHaveBeenCalledWith("userId");
@@ -251,7 +252,7 @@ describe("ChatBot", function() {
 			bot._onRelationship("userId", steam.EFriendRelationship.None);
 			bot._onRelationship("userId", steam.EFriendRelationship.Blocked);
 			bot._onRelationship("userId", steam.EFriendRelationship.RequestInitiator);
-			bot._onRelationship("userId", steam.EFriendRelationship.PendingInviter);
+			bot._onRelationship("userId", steam.EFriendRelationship.RequestInitiator);
 			bot._onRelationship("userId", steam.EFriendRelationship.Friend);
 			bot._onRelationship("userId", steam.EFriendRelationship.Ignored);
 			bot._onRelationship("userId", steam.EFriendRelationship.IgnoredFriend);
