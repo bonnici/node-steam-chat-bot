@@ -181,21 +181,21 @@ myBot.addTriggers([
 	{ 
 		name: 'Youtube', 
 		type: 'YoutubeTrigger', 
-		options: { command: '!yt', rickrollChance: 0.01 } 
+		options: { command: '!yt', rickrollChance: 0.01, apiKey: 'XXX' } 
 	},
 
 	// Search Google and respond with the top result whenever someone types !g <query>
 	{
 		name: 'Google',
 		type: 'GoogleTrigger',
-		options: { command: '!g' }
+		options: { command: '!g', csiId: 'XXX', apiKey: 'XXX' }
 	},
 
 	// Search Google Images and respond with the top result whenever someone types !gi <query>
 	{
 		name: 'GoogleImages',
 		type: 'GoogleImagesTrigger',
-		options: { command: '!gi' }
+		options: { command: '!gi', csiId: 'XXX', apiKey: 'XXX' }
 	}
 ]);
 

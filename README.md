@@ -21,9 +21,9 @@ ChatReplyTrigger - Detects a message (either an exact match or a "contains" matc
 
 CleverbotTrigger - Uses cleverbot to reply to a message, optionally only when a specific word is mentioned.
 
-GoogleTrigger - Prints out the title and link of the first search result on Google.
+GoogleImagesTrigger - Prints a link to the first search result on Google Images. Requires setup, see https://www.npmjs.com/package/google-images#set-up-google-custom-search-engine.
 
-GoogleImagesTrigger - Prints a link to the first search result on Google Images.
+GoogleTrigger - Prints out the title and link of the first search result on Google. Requires the same setup as GoogleImagesTrigger.
 
 RegexReplaceTrigger - Detects a regex match in a message and uses the matches to construct a reply.
 
@@ -31,7 +31,7 @@ TumblrTrigger - Allows the bot to post things to a tumblr blog, either by comman
 
 WolframAlphaTrigger - Queries Wolfram Alpha if a message starts with a specified command. This only displays a textual representation of the primary result (if it exists) so it's not always a good answer. You will need an appId from http://products.wolframalpha.com/api/.
 
-YoutubeTrigger - Responds to a message with the top YouTube search result if it starts with a specific command. Also has an option to randomly rickroll instead of returning the best result.
+YoutubeTrigger - Responds to a message with the top YouTube search result if it starts with a specific command. Also has an option to randomly rickroll instead of returning the best result. Requires a Google API key (see GoogleImagesTrigger).
 
 To get this running in Windows you'll need to follow the setup instructions for [node-gyp](https://github.com/TooTallNate/node-gyp#installation) and also use a branch of libxmljs as described in [this issue](https://github.com/polotek/libxmljs/issues/176) (TLDR is to run 'npm install polotek/libxmljs#vendor-src' before 'npm install').
 

@@ -19,8 +19,8 @@
     , "wolfram": "0.3.x"
     , "tumblr.js": "0.0.x"
     , "youtube-node": "1.2.x"
-    , "google": "1.1.x"
-    , "google-images": "0.1.x"
+    , "request": "2.69.x"
+    , "google-images": "1.0.x"
   }
   , "engines": {
       "node": "0.12.x"
