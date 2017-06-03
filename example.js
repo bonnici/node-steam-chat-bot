@@ -1,4 +1,4 @@
-var ChatBot = require('steam-chat-bot').ChatBot;
+var ChatBot = require('./lib/chatBot').ChatBot;
 
 // This will log in a steam user with the specified username and password 
 // You can also pass in a steam guard code from an email
